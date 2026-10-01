@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Alta</title>
+    <style>
+        .fila {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .columna {
+            width: 48%;
+        }
+        .campo {
+            margin-bottom: 10px;
+        }
+        .campo input {
+            display: block;
+            width: 200px;
+        }
+        .campo label {
+            display: block;
+            font-size: 13px;
+        }
+        .en-linea {
+            display: flex;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset style="max-width: 650px; margin: 20px auto;">    
+        <h1 style="text-align: center;">Formulario de Alta</h1>
+        <form>
+            <div class="fila">   
+            <div class="columna">
+                    <h2>Nombre y apellidos <span>*</span></h2>
+                    <div class="campo">
+                        <input type="text" id="Nombre" name="Nombre">
+                        <label for="Nombre">Nombre</label>
+                    </div>
+                    <div class="campo">
+                        <input type="text" id="PrimerApellido" name="PrimerApellido">
+                        <label for="PrimerApellido">Primer apellido</label>
+                    </div>
+                    <div class="campo">
+                        <input type="text" id="SegundoApellido" name="SegundoApellido">
+                        <label for="SegundoApellido">Segundo apellido</label>
+                    </div>
+                </div>
+                <div class="columna">
+                    <h2>Dirección*</span></h2>
+                    <div class="campo">
+                        <input type="text" id="Calle" name="Calle">
+                        <label for="Calle">Calle, número, piso, puerta</label>
+                    </div>
+                    <div class="campo">
+                        <input type="text" id="CodigoPostal" name="CodigoPostal">
+                        <label for="CodigoPostal">Código postal</label>
+                    </div>
+                    <div class="campo">
+                        <input type="text" id="Municipio" name="Municipio">
+                        <label for="Municipio">Municipio</label>
+                    </div>
+                    <div class="en-linea">
+                        <div>
+                            <select name="Provincia" id="Provincia">
+                                <option value=""></option>
+                                <option value="1">Provincia 1</option>
+                            </select>
+                            <label for="Provincia">Provincia</label>
+                        </div>
+                        <div>
+                            <select name="Pais" id="Pais">
+                                <option value=""></option>
+                                <option value="mx">México</option>
+                            </select>
+                            <label for="Pais">País</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="columna">
+                    <h2>Email*</span></h2>
+                    <input type="text" id="Correo" name="Correo" style="width: 200px;">
+                </div>
+
+                <div class="columna">
+                    <h2>Teléfono*</span></h2>
+                    <div class="en-linea">
+                        <div class="campo">
+                            <input type="text" id="Fijo" name="Fijo" style="width: 95px;">
+                            <label for="Fijo">Fijo</label>
+                        </div>
+                        <div class="campo">
+                            <input type="text" id="Movil" name="Movil" style="width: 95px;">
+                            <label for="Movil">Móvil</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="margin-top: 20px;">
+                <button type="submit">Enviar</button>
+            </div>
+
+        </form>
+    </fieldset>
+</body>
+</html>

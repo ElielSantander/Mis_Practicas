@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Alta</title>
+
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <div class="formulario">
+
+        <h1>Formulario de Alta</h1>
+
+        <!-- NOMBRE -->
+        <div class="seccion">
+
+            <div class="titulo">
+                Nombre y apellidos <span class="asterisco">*</span>
+            </div>
+
+            <div class="campos">
+
+                <input type="text" name="nombre">
+                <label>Nombre</label>
+
+                <input type="text" name="primer_apellido">
+                <label>Primer apellido</label>
+
+                <input type="text" name="segundo_apellido">
+                <label>Segundo apellido</label>
+
+            </div>
+
+        </div>
+
+
+        <!-- DIRECCIÓN -->
+        <div class="seccion direccion">
+
+            <div class="titulo">
+                Dirección <span class="asterisco">*</span>
+            </div>
+
+            <div class="campos">
+
+                <input type="text" name="direccion">
+                <label>Calle, número, piso, puerta</label>
+
+                <input type="text" name="codigo_postal">
+                <label>Código postal</label>
+
+                <input type="text" name="municipio">
+                <label>Municipio</label>
+
+                <select name="provincia">
+                    <option value=""></option>
+                    <option value="provincia1">Provincia 1</option>
+                    <option value="provincia2">Provincia 2</option>
+                    <option value="provincia3">Provincia 3</option>
+                </select>
+
+                <label>Provincia</label>
+
+                <select name="pais">
+                    <option value=""></option>
+                    <option value="mexico">México</option>
+                    <option value="españa">España</option>
+                </select>
+
+                <label>País</label>
+
+            </div>
+
+            <div class="ayuda">
+                El código postal es
+                imprescindible para
+                poder recibir los
+                pedidos
+            </div>
+
+        </div>
+
+
+       
+        <div class="seccion">
+
+            <div class="titulo">
+                Email <span class="asterisco">*</span>
+            </div>
+
+            <div class="campos">
+
+                <input type="email" name="email">
+
+            </div>
+
+        </div>
+
+
+        <!-- TELEFONO -->
+        <div class="seccion">
+
+            <div class="titulo">
+                Teléfono <span class="asterisco">*</span>
+            </div>
+
+            <div class="campos">
+
+                <input type="text" name="fijo">
+                <label>Fijo</label>
+
+                <input type="text" name="movil">
+                <label>Móvil</label>
+
+            </div>
+
+        </div>
+
+
+        <input class="boton" type="submit" value="Enviar">
+
+    </div>
+
+</body>
+</html>
